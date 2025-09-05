@@ -1,11 +1,9 @@
 # YC Crap Analysis Backend - FastAPI Skeleton
 
 from fastapi import FastAPI
+from app.routes import router
 
 app = FastAPI()
+app.include_router(router)
 
-@app.get("/health")
-def health_check():
-    return {"status": "ok"}
-
-# TODO: Add /analyze endpoint and ML integration
+# Entry point for FastAPI app
