@@ -3,3 +3,6 @@ uvicorn
 pandas
 scikit-learn
 kagglehub
+fsspec
+huggingface_hub
+matplotlib
